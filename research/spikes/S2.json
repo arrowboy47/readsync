@@ -1,0 +1,66 @@
+{
+ "original": {
+  "volumeId": 90,
+  "chapterId": 102,
+  "pageNum": 0,
+  "seriesId": 90,
+  "libraryId": 4,
+  "bookScrollId": null,
+  "lastModifiedUtc": "2026-10-31T04:22:55.2915844"
+ },
+ "events": [
+  {
+   "t": 0.01,
+   "event": "OnlineUsers",
+   "args": [
+    [
+     "thehusk"
+    ]
+   ]
+  },
+  {
+   "t": 2.1,
+   "event": "UserProgressUpdate",
+   "args": [
+    {
+     "body": {
+      "userId": 1,
+      "seriesId": 90,
+      "volumeId": 90,
+      "chapterId": 102,
+      "pagesRead": 5
+     },
+     "name": "UserProgressUpdate",
+     "title": "Updating User Progress",
+     "subTitle": "",
+     "eventType": "updated",
+     "progress": ""
+    }
+   ]
+  },
+  {
+   "t": 16.23,
+   "event": "UserProgressUpdate",
+   "args": [
+    {
+     "body": {
+      "userId": 1,
+      "seriesId": 90,
+      "volumeId": 90,
+      "chapterId": 102,
+      "pagesRead": 0
+     },
+     "name": "UserProgressUpdate",
+     "title": "Updating User Progress",
+     "subTitle": "",
+     "eventType": "updated",
+     "progress": ""
+    }
+   ]
+  }
+ ],
+ "seen": [
+  "OnlineUsers",
+  "UserProgressUpdate"
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "samples": 10,
+ "hits": 10,
+ "min_hits": 9,
+ "seed": 7,
+ "rows": [
+  {
+   "t": 4988.5,
+   "file": "11 - This Is How You Lose the Time War.mp3",
+   "score": 92.3,
+   "ok": true,
+   "heard": "Catcher with sailors and fishermen know the shapes of the wind, can sail through any storm, rate themselves equal to any",
+   "expected": "occurs, of course, and reed boats ply the highland lakes. Quechua sailors and fisherman know the shapes of the wind, can"
+  },
+  {
+   "t": 2355.8,
+   "file": "07 - This Is How You Lose the Time War.mp3",
+   "score": 97.9,
+   "ok": true,
+   "heard": "her foes, drive them to their forts, demand surrender.\n And should surrender not ensue,\n they raise up their engines to ",
+   "expected": "m distant lands.) Now the horsemen slaughter foes, drive them to their forts, demand surrender, and, should surrender no"
+  },
+  {
+   "t": 9966.7,
+   "file": "19 - This Is How You Lose the Time War.mp3",
+   "score": 98.2,
+   "ok": true,
+   "heard": "office. Blood, as usual, is everywhere. Mostly frozen this time, which smells better.\n The agency has chosen a Russian f",
+   "expected": "ofPDF.com Commandant summons Red to a field office. Blood, as usual, is everywhere. Mostly frozen, this time, which smel"
+  },
+  {
+   "t": 1162.4,
+   "file": "05 - This Is How You Lose the Time War.mp3",
+   "score": 95.0,
+   "ok": true,
+   "heard": "and the grand dumb motion of tectonic plates,\n forces too big for we cockroaches to conceive,\n too slow for mayfly us to",
+   "expected": " the sun. Erosion made it, says a third, and the grand dumb motion of tectonic plates, forces too big for we cockroaches"
+  },
+  {
+   "t": 8215.7,
+   "file": "16 - This Is How You Lose the Time War.mp3",
+   "score": 94.5,
+   "ok": true,
+   "heard": "the children running barefoot nearby.\n What she does is study.\n What she does is play.\n In six dimensions.\n A game of ch",
+   "expected": ", not even crowns or garlands for the children running barefoot nearby. What she does is study. What she does is play, i"
+  },
+  {
+   "t": 5625.5,
+   "file": "12 - This Is How You Lose the Time War.mp3",
+   "score": 97.7,
+   "ok": true,
+   "heard": "its slate surface with something like vines, sap, blood, just beneath the surface.\n Just waiting. It will bloom soon. Bl",
+   "expected": "nted in the banked embers of the planet\u2019s heart that\u2019s riddled its slate surface with something like vines, sap, blood. "
+  },
+  {
+   "t": 942.7,
+   "file": "04 - This Is How You Lose the Time War.mp3",
+   "score": 94.4,
+   "ok": true,
+   "heard": "Ready, so next comes shared business.\n I'm sorry you couldn't meet the good doctor.\n She's important.\n More to the point",
+   "expected": "h a direct address to the reader. I\u2019ve done that already, so next comes shared business: I\u2019m sorry you couldn\u2019t meet the"
+  },
+  {
+   "t": 7782.8,
+   "file": "15 - This Is How You Lose the Time War.mp3",
+   "score": 88.4,
+   "ok": true,
+   "heard": "\"'So furious, and in your wake the braid thickens,\n \"'admits fewer and fewer strands,\n \"'while garden scowls, thundercla",
+   "expected": "ouched. You move so fast, so furious, and in your wake the braid thickens, admits fewer and fewer strands, while Garden "
+  },
+  {
+   "t": 630.7,
+   "file": "03 - This Is How You Lose the Time War.mp3",
+   "score": 94.5,
+   "ok": true,
+   "heard": "Iterated until the split where we fork off into one stable, chaotic possibility.\n The future we seek to secure at each o",
+   "expected": "from the first move, endlessly iterated until the split where we fork off into unstable, chaotic possibility\u2014the future "
+  },
+  {
+   "t": 6659.7,
+   "file": "13 - This Is How You Lose the Time War.mp3",
+   "score": 96.2,
+   "ok": true,
+   "heard": "to get to everything one day.\n But now she learns the names from books.\n She pulls some from the index to save time\n and",
+   "expected": "? She planned to get to it one day; she plans to get to everything one day. But now she learns the names from books. She"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "phases": {
+  "extract_text": 0.1,
+  "align": 14.3
+ },
+ "ebook_chars": 209197,
+ "align_ok": true,
+ "anchors": 26271,
+ "map_last_char": 209197,
+ "coverage_chars": 1.0,
+ "map_last_ts": 15354.624005999998,
+ "wall_total_s": 14.5,
+ "peak_rss_mb": 154
+}

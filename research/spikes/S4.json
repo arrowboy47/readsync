@@ -1,0 +1,143 @@
+{
+ "samples": 10,
+ "agree": 10,
+ "need": 9,
+ "tol_chars": 1500,
+ "window": 0.1,
+ "rows": [
+  {
+   "t": 4988.5,
+   "heard": "Catcher with sailors and fishermen know the shapes of the wind, can sail through any storm, rate themselves equal to any",
+   "map_char": 67664,
+   "found_char": 67729,
+   "dist": 65,
+   "score": 94.2,
+   "runner_up": 48.9,
+   "margin": 45.3,
+   "agree": true
+  },
+  {
+   "t": 2355.8,
+   "heard": "her foes, drive them to their forts, demand surrender.\n And should surrender not ensue,\n they raise up their engines to ",
+   "map_char": 32779,
+   "found_char": 32788,
+   "dist": 9,
+   "score": 97.9,
+   "runner_up": 49.1,
+   "margin": 48.8,
+   "agree": true
+  },
+  {
+   "t": 9966.7,
+   "heard": "office. Blood, as usual, is everywhere. Mostly frozen this time, which smells better.\n The agency has chosen a Russian f",
+   "map_char": 133147,
+   "found_char": 133189,
+   "dist": 42,
+   "score": 98.2,
+   "runner_up": 47.4,
+   "margin": 50.7,
+   "agree": true
+  },
+  {
+   "t": 1162.4,
+   "heard": "and the grand dumb motion of tectonic plates,\n forces too big for we cockroaches to conceive,\n too slow for mayfly us to",
+   "map_char": 16535,
+   "found_char": 16490,
+   "dist": 45,
+   "score": 95.9,
+   "runner_up": 46.4,
+   "margin": 49.4,
+   "agree": true
+  },
+  {
+   "t": 8215.7,
+   "heard": "the children running barefoot nearby.\n What she does is study.\n What she does is play.\n In six dimensions.\n A game of ch",
+   "map_char": 110462,
+   "found_char": 110517,
+   "dist": 55,
+   "score": 95.1,
+   "runner_up": 46.9,
+   "margin": 48.2,
+   "agree": true
+  },
+  {
+   "t": 5625.5,
+   "heard": "its slate surface with something like vines, sap, blood, just beneath the surface.\n Just waiting. It will bloom soon. Bl",
+   "map_char": 76117,
+   "found_char": 76149,
+   "dist": 32,
+   "score": 97.7,
+   "runner_up": 47.2,
+   "margin": 50.6,
+   "agree": true
+  },
+  {
+   "t": 942.7,
+   "heard": "Ready, so next comes shared business.\n I'm sorry you couldn't meet the good doctor.\n She's important.\n More to the point",
+   "map_char": 13574,
+   "found_char": 13524,
+   "dist": 50,
+   "score": 96.0,
+   "runner_up": 47.2,
+   "margin": 48.8,
+   "agree": true
+  },
+  {
+   "t": 7782.8,
+   "heard": "\"'So furious, and in your wake the braid thickens,\n \"'admits fewer and fewer strands,\n \"'while garden scowls, thundercla",
+   "map_char": 104761,
+   "found_char": 104749,
+   "dist": 12,
+   "score": 88.4,
+   "runner_up": 45.4,
+   "margin": 43.1,
+   "agree": true
+  },
+  {
+   "t": 630.7,
+   "heard": "Iterated until the split where we fork off into one stable, chaotic possibility.\n The future we seek to secure at each o",
+   "map_char": 9184,
+   "found_char": 9208,
+   "dist": 24,
+   "score": 94.5,
+   "runner_up": 46.4,
+   "margin": 48.1,
+   "agree": true
+  },
+  {
+   "t": 6659.7,
+   "heard": "to get to everything one day.\n But now she learns the names from books.\n She pulls some from the index to save time\n and",
+   "map_char": 89611,
+   "found_char": 89585,
+   "dist": 26,
+   "score": 96.2,
+   "runner_up": 49.5,
+   "margin": 46.7,
+   "agree": true
+  }
+ ],
+ "hard": [
+  {
+   "case": "intro/credits (t=2s)",
+   "t": 2.0,
+   "heard": "Simon & Schuster Audio presents\n This is How You Lose the Time War\n by Amal El-Mokhtar\n and Max Gladstone\n Read by Cynthia Farrell\n and Emily Bluzeller",
+   "map_char": 318,
+   "found_char": 1700,
+   "dist": 1382,
+   "score": 46.4,
+   "runner_up": 46.4,
+   "margin": 0.0
+  },
+  {
+   "case": "file-start chapter announcement (file 15, t+1s)",
+   "t": 7442.7,
+   "heard": "between Starfleets in the far future\n of Strand 2218.\n As the great Golumfrey\n lists planetward,\n raining escape pods, as battle\n stations wilt like flowers\n to",
+   "map_char": 100111,
+   "found_char": 100114,
+   "dist": 3,
+   "score": 94.8,
+   "runner_up": 47.4,
+   "margin": 47.4
+  }
+ ]
+}
