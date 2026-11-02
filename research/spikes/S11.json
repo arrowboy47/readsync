@@ -1,0 +1,25 @@
+{
+ "readers": {
+  "A": 1,
+  "B": 2
+ },
+ "K1_two_readers_same_hash": {
+  "pass": true,
+  "detail": "A=0.25 B=0.8"
+ },
+ "K3_annotation_isolation": {
+  "pass": true,
+  "detail": "B (same hash, same device key) is offered 0 of A's 5 highlights"
+ },
+ "K4_wipe_is_per_reader": {
+  "pass": true,
+  "detail": "A live=5 (want 5), B tombstoned=3 (want 3)"
+ },
+ "K4_reverse": {
+  "pass": true,
+  "detail": "B had already wiped; A's wipe leaves B's tombstones alone"
+ },
+ "default_user_fallback": {
+  "note": "_resolve_uid() attributes un-scoped calls to the first admin; every spoke must pass reader_id explicitly (K6)"
+ }
+}

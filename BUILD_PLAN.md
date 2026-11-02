@@ -207,6 +207,7 @@ Done when: `S10.md` records suspend behaviour, Wi-Fi uptime and battery drain pe
 or not.
 
 ## Task 15b — S11: Two-reader isolation (K1, K3, K4, K6)
+*DB layer done 2026-11-02: PASS, `research/spikes/S11.md`. HTTP layer + Kavita/ABS spokes move to Phase 2 tests.*
 In the throwaway BookBridge: create reader A and B, same book hash. Run `K1`, `K3` and `K4` (script `spikes/s11_two_readers.py`): both PUT different positions, upload annotations as A, expect B sees none, A's wiped sidecar leaves B untouched. Also check what happens in Kavita and ABS with two users (each their own key).
 
 Verify: `python3 spikes/s11_two_readers.py --expect-isolated`
