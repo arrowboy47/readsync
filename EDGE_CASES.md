@@ -29,7 +29,7 @@ BookBridge code referred to below (commit `65f1cc2`, in `refs/bookbridge/`):
 
 ---
 
-## 1. Cross-cutting rules (R1–R14)
+## 1. Cross-cutting rules (R1–R15)
 
 The cases below collapse into these rules. They replace and extend the "Sync rules" in `ARCHITECTURE.md`.
 
@@ -49,6 +49,7 @@ The cases below collapse into these rules. They replace and extend the "Sync rul
 | **R12** | **Read-only reconcile after a restore or long outage.** After the hub is down > 30 min, or any restore (hub, Kavita, ABS), the first cycle pulls every surface, writes nothing, and reports the diff. Writing resumes once R4, R5 and R10 pass. |
 | **R13** | **Compare positions, never percents.** Each surface computes % differently (front and back matter, credits, page layout, narration). The hub compares canonical positions, and never maps audio ↔ text by %. Fable and Hardcover get the canonical text %. |
 | **R14** | **Single writer, single sync server.** One hub instance holds a DB lease; spike and test containers run with sync off. Each device points at exactly one KOSync server (the hub), never also Kavita's or Koinsight's. |
+| **R15** | **One reader, one island.** Every record (progress, annotation, bookmark, stats, review item, alert, credential, device) carries a `reader_id` and every query filters on it. Only book identity, files and alignment maps are shared (they describe the book, not a person). Nothing a reader did is visible to, or written by, another reader's sync. Cross-reader features (shared highlights, "she is on ch 9") are opt-in per reader and out of v1. |
 
 ---
 
@@ -471,6 +472,24 @@ keys if BookBridge supports them. *Status:* [SPIKE] in Phase 2.
 
 **J4 — Fable credentials and token.** `.env` (600) + Vaultwarden; the cached token file is mode 600. *Status:* [NEW]
 
+### K. Multiple readers (the owner and a partner, separate accounts)
+
+Both people have their own Kavita user, ABS user, Fable account and KOReader credentials; the hub maps each to one `reader_id` (R15). Kavita and ABS are already per-user; BookBridge 7.10 is multi-user with per-user progress, KOSync documents and stats, plus an opt-in "Shared Library" that makes *matches* visible to everyone but never progress. Test every case with two readers on the same book.
+
+**K1 — Same book, both reading, different places.** Reader A is on ch 5, reader B on ch 11, same EPUB hash. Each KOSync PUT is stored under the sender's `reader_id`; a GET returns the caller's own position only. *Status:* [BB] verify. *Test:* `K1_two_readers_same_hash`
+**K2 — Wrong credentials on a shared device.** One Kindle, one KOSync login. If both use the same device the hub cannot tell who is reading. *Rule:* one device = one reader, recorded at pairing; a second reader gets their own device or their own KOReader profile (Profiles plugin) with their own credentials. A device is never "whoever synced last". *Status:* [NEW]; Q9.
+**K3 — Annotation isolation.** A's highlights never reach B's devices, B's Kavita annotations, or B's review queue, including after a hash change (E16) and after a restore (I-series). The exchange key `(md5, reader_id, ann_key)` already includes the reader; add a test that replays A's upload as B and expects 0 rows visible. *Status:* [BB] + [NEW] test.
+**K4 — Mass-delete guard (R10) is per reader.** B's wiped sidecar must not park or tombstone A's annotations, and one reader's parked exchange must not block the other's. *Status:* [NEW]
+**K5 — Alignment maps are shared, cost is not duplicated.** The map for a paired title is built once (it depends on the book, not the reader). Position lookups (ts ⇄ char) are read-only on the shared map. A reader-specific correction (A fixes a wrong anchor) must not change B's mapping unless an admin promotes it. *Status:* [NEW]
+**K6 — Both listen to the same ABS book.** ABS keeps progress per user already; the hub's ABS API key per reader must be that reader's key, never the admin key (the admin key can read everyone and would write to the wrong user). *Status:* [NEW]; config check at startup fails if two readers share a key.
+**K7 — Credential leak surface.** KOSync credentials, Kavita OPDS URLs (they embed the API key) and the public `/koreader/*` host (J-series) are per reader; revoking one reader's key must not affect the other. Per-reader rate limits on the public host. *Status:* [NEW]
+**K8 — Review queue and alerts.** Low-confidence matches, parked mass-deletes and failures go to the reader they belong to (Telegram chat per reader; admin sees counts only, not text). Notes may be private. *Status:* [NEW]; Q10.
+**K9 — New reader onboarding.** Adding a reader creates their Kavita/ABS links and an empty state. Option: backfill from what they already have in ABS/Kavita (progress yes, annotations none). It must not copy the first reader's data. *Status:* [NEW]
+**K10 — Removing a reader.** Deleting B removes B's rows, devices, keys and queue items; A's data and the shared maps stay. Export B's annotations first. *Status:* [NEW]
+**K11 — Fable.** Each reader's progress mirrors to their own Fable account; a reader without Fable is skipped, not defaulted to the other's. *Status:* [NEW]; Q11.
+**K12 — Shared books, separate files.** Both readers' devices fetch the same Kavita file through OPDS (identical hash, Q6) but under their own Kavita user, so "currently reading" lists stay separate. Age/library restrictions on a Kavita user must also limit what the hub exposes to that reader. *Status:* [NEW]
+**K13 — Clock and time-zone differences.** Devices in different zones: activity time (R1/R2) is per device, per reader; a late device of A never reorders B's history. *Status:* covered by R1/R2 once `reader_id` is in the key.
+
 ---
 
 ## 3. What this changes in the plan
@@ -489,7 +508,7 @@ keys if BookBridge supports them. *Status:* [SPIKE] in Phase 2.
 - **Tests:** each `[NEW]` and `[BB]` case gets `tests/edge/test_<ID>.py` replaying recorded events; Phase 7 runs them
   all.
 
-## 4. Questions for the owner (Q1–Q8)
+## 4. Questions for the owner (Q1–Q11)
 
 **Answered 2026-10-21: all defaults accepted.** The owner also set a library policy: every book exists in both ABS and
 Kavita. So D8 orphans and the "audio-only" state are transitional, not permanent; B12/F7 coverage checks stay as a
@@ -505,3 +524,6 @@ safety net for edition mismatches.
 | Q6 | Devices get books only from Kavita's OPDS (byte-identical files)? | Yes |
 | Q7 | KOReader sync settings: newer = Silently, older = Prompt? | Yes |
 | Q8 | Unreviewed low-confidence bookmarks: after 30 days place them at chapter level marked "approximate", or keep them queued? | Place at chapter level |
+| Q9 | Does she use her own e-reader and phone, or share any device with you? (K2: one device = one reader) | Own devices; a shared device uses a separate KOReader profile |
+| Q10 | Her review queue and alerts: her own Telegram chat, private from you except counts? | Yes, private |
+| Q11 | Does she use Fable (mirror her progress there)? Which hub features does she want beyond progress sync? | Her choice; off by default |

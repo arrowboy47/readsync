@@ -152,3 +152,9 @@ Done ahead of the device so the crossover is one sitting:
 - **The Kobo stands in for the Kindle** for everything that is KOReader behaviour (kosync settings, sync dialogs, annotation plugin, follow-along page turns). Only Kindle-specific facts remain: Wi-Fi/suspend behaviour, e-ink refresh, jailbreak/firmware. Those are the device checklist in `research/devices.md` and spikes S8-on-device and S10.
 - **Same server, same user for both KOReader devices**, so the hub sees one reader with two devices (Q6/Q7 defaults). Kindle uses the identical KOSync URL as the Kobo.
 - **Matching is by hash, not filename**, so the same EPUB bytes must be on Kobo, Kindle and Kavita. Never re-export through Calibre between devices.
+
+## Readers (multi-user, added 2026-11-02)
+- A **reader** is a person. Each has a `reader_id`, their own Kavita user + API key, ABS user + API key, KOSync credentials, optional Fable login, devices, and Telegram chat. Config lives per reader, never as one global key (K6).
+- **Shared:** book identity, files, alignment maps (read-only). **Never shared:** progress, annotations, bookmarks, stats, queue items, alerts, devices (R15).
+- Every canonical record (Book identity excepted) gets `reader_id` in its primary key; every query filters on it; the test suite runs each scenario with two readers and asserts zero cross-visibility (K1, K3, K4).
+- BookBridge 7.10 already isolates progress, KOSync documents and stats per user (changelog "properly isolated"); we keep that and add the same to the Kavita and ABS spokes and the annotation exchange.

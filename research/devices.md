@@ -35,3 +35,9 @@ Feeds EDGE_CASES A8, F1, I5 and owner questions Q6/Q7.
 - Audiobook app: **Audiobookshelf** (iOS app). Version, server URL it uses, and downloads: still to confirm on the phone.
 - No ebook reader connected to Kavita yet. Recommendation given 2026-11-02 (see chat / ARCHITECTURE.md → iOS reader).
 - Fable app: to confirm.
+
+## Books on the devices vs Kavita (2026-11-02, `tools/device_vs_kavita.py`, hash match, read-only)
+- **Kobo:** 7 of 13 files are byte-identical to a Kavita copy. Not in Kavita (or a different file): *11/22/63*, *Psychology and Work*, 4 PDFs (Hogg/McKean/Craig, Raschka, *Deep Learning with Python*, Murach's JS).
+- **Kindle:** 14 of 26 match. Not in Kavita or a different file: *Tress of the Emerald Sea*, *Rich Dad's Guide to Investing*, *Atomic Habits*, *Deep Learning with Python* (EPUB), *Dune*, *Fellowship of the Ring*, *Handmaid's Tale*, `RR.epub` (Red Rising?), *The Drowning Faith*, *House in the Cerulean Sea*, *Tomorrow ×3*, *Hands-On Machine Learning*.
+- *Remain* and *GRE Prep* sit on both devices as the same bytes as Kavita, so progress will line up there from day one.
+- Action before the first real sync: for each "no match" book either add it to Kavita (then push that exact file to the device via OPDS) or accept that it stays local-only. Same title with different bytes will not share progress.

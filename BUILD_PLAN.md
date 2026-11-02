@@ -206,6 +206,12 @@ every 20 s. Record: does the device auto-suspend, does Wi-Fi stay up, battery % 
 Done when: `S10.md` records suspend behaviour, Wi-Fi uptime and battery drain per hour, and the owner judges it usable
 or not.
 
+## Task 15b — S11: Two-reader isolation (K1, K3, K4, K6)
+In the throwaway BookBridge: create reader A and B, same book hash. Run `K1`, `K3` and `K4` (script `spikes/s11_two_readers.py`): both PUT different positions, upload annotations as A, expect B sees none, A's wiped sidecar leaves B untouched. Also check what happens in Kavita and ABS with two users (each their own key).
+
+Verify: `python3 spikes/s11_two_readers.py --expect-isolated`
+Done when: `S11.md` records that nothing crosses between readers, or lists exactly what does.
+
 ## Task 16 — Spike report and go/no-go
 Summarise S1–S10 in `research/spikes/REPORT.md` with the recommended scope for Phases 2–7, and update every
 `[SPIKE]` case in `EDGE_CASES.md` with its answer.

@@ -13,7 +13,7 @@ the place, and highlights stay stuck on whichever device made them.
 
 ## Who
 
-Single user (the owner's own Kavita, ABS, KOReader and Fable accounts). Multi-user is out of scope for v1.
+Two readers in v1: the owner and a partner, each with their own Kavita user, ABS user, Fable account and KOReader credentials, fully isolated from each other (rule R15, cases K1–K13). The design must not assume a single user anywhere; it need not support more than a handful.
 
 ## Data types
 
@@ -66,6 +66,6 @@ Single user (the owner's own Kavita, ABS, KOReader and Fable accounts). Multi-us
 
 - **V1:** P sync (scenarios 1, 3, 5, 6), Kavita annotation spoke, ABS bookmark spoke, Fable writer, O roll-up.
 - **Next:** follow-along mode for immersion, Hardcover target, Storyteller read-along on iOS.
-- **Out:** multi-user, PDFs for annotations (Kavita annotations are EPUB-only), Kindle native reader (non-KOReader).
+- **Out:** cross-reader sharing (shared highlights, "she is on ch 9"), more than a handful of readers, PDFs for annotations (Kavita annotations are EPUB-only), Kindle native reader (non-KOReader).
 - **Owner policy (2026-10-21):** every book is kept in both ABS and Kavita. Today's audio-only titles (Red Rising ×5,
   Deep Work, …) get EPUBs as the library is brought in line; until then they sync P to Fable only.
