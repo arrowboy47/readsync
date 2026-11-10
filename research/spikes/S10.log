@@ -1,0 +1,6 @@
+00:41:09 start battery=98 wifi=true
+00:47:24 t=375s turns=11 reqs=15 fails=15 wifi_lost=0 battery=97
+00:53:39 t=750s turns=23 reqs=30 fails=30 wifi_lost=0 battery=97
+00:59:55 t=1126s turns=35 reqs=45 fails=45 wifi_lost=0 battery=96
+01:06:09 t=1500s turns=47 reqs=60 fails=60 wifi_lost=0 battery=96
+01:07:57 end after 1608s turns=50 reqs=64 fails=64 wifi_lost=0 battery=96

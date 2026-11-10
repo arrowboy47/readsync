@@ -203,6 +203,7 @@ it would send other devices. This confirms the risk the R10 guard in Phase 3 exi
 Verify: `python3 spikes/s9_mass_delete.py --expect-tombstones 10`
 
 ## Task 15 — S10: Follow-along on the Kindle
+*Done in part 2026-11-10: PARTIAL, `research/spikes/S10.md`. Page turns, battery, ghosting and suspend measured. Network half to repeat on the home Wi-Fi.*
 A throwaway plugin turns a page every 30 s on the PW3 for 30 minutes with Wi-Fi on and a request to the S3 container
 every 20 s. Record: does the device auto-suspend, does Wi-Fi stay up, battery % used, any e-ink ghosting complaints
 (C9, C10).

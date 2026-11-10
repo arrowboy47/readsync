@@ -234,7 +234,7 @@ event arrives. *Status:* [NEW] + [SPIKE S7, S10]
 (offline)", resumes on reconnect, and never jumps backward on reconnect. *Status:* [NEW]
 
 **C10 — Programmatic page turns don't reset the auto-suspend timer.** The Kindle sleeps mid-chapter and Wi-Fi drops.
-The plugin must hold off auto-suspend while following; battery cost measured. *Status:* [SPIKE S10]
+The plugin must hold off auto-suspend while following; battery cost measured. *Status:* confirmed in S10 (the Kindle slept during programmatic page turns); battery about 4 to 5 % per hour at one turn per 30 s (coarse); wakelock and Wi-Fi after sleep still to test
 
 **C11 — Different books** (audio on book A, Kindle on book B). No immersion; both solo. *Status:* [NEW]
 
