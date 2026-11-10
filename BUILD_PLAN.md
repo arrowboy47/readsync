@@ -161,6 +161,7 @@ BookBridge skip the 300 s KOSync PUT debounce on close/suspend (B6), and does it
 Verify: `grep -qE '^Decision: (fork|sidecar)' research/spikes/S5.md`
 
 ## Task 11 — S6: Fable login and progress write
+*Done 2026-11-10: PASS, research/spikes/S6.md. Fable progress lives at /reading_progress.*
 `spikes/s6_fable.py` (Python port of ShelfSync's `fable/api.lua` calls): log in, list the "currently reading" shelf,
 re-post the **current** % for one book already there (idempotent), read it back. Note in `S6.md` whether Fable has
 any notion of a re-read or of finish dates (H8). ToS risk accepted by owner.

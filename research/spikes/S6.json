@@ -1,0 +1,14 @@
+{
+ "system_lists": [
+  "current_reading",
+  "did_not_finish",
+  "finished",
+  "want_to_read"
+ ],
+ "roundtrip": {
+  "book": "474bb7f9-a94b-480e-b1c7-eba86e3e0611",
+  "before": 12,
+  "after": 12,
+  "post_status": 201
+ }
+}
