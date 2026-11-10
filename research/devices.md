@@ -33,7 +33,10 @@ Feeds EDGE_CASES A8, F1, I5 and owner questions Q6/Q7.
 
 ## iPhone
 - Audiobook app: **Audiobookshelf** (iOS app). Version, server URL it uses, and downloads: still to confirm on the phone.
-- No ebook reader connected to Kavita yet. Recommendation given 2026-11-02 (see chat / ARCHITECTURE.md → iOS reader).
+- **Ebook reading on the iPhone (decided 2026-11-10): the Kavita web reader in Safari, added to the Home Screen (PWA), is the supported path.** It saves position, highlights and notes straight to Kavita (verified in S1/S2). It needs a connection.
+- **Readest** is installed and its OPDS catalog works (the Kavita feed was browsed from it on 2026-11-10; the Kavita log shows the client name "Readest/1.0 (OPDS Browser)"), but it has **not sent any progress** to Kavita: the log has no request to the sync endpoint. Its Integrations screen shows OPDS as a source only, and no KOReader Sync destination was found. Treat Readest as download-only until a KOReader Sync setting is found and verified.
+- The Kavita OPDS wiki page lists no iOS EPUB client with progress sync (Chunky and Panels are comics only, Yomu has no sync). KOReader is the only EPUB client with sync there, so on the phone the web reader is the one that works.
+- The audiobook app on the phone is AudioBooth (see research/spikes/S7.md).
 - Fable app: to confirm.
 
 ## Books on the devices vs Kavita (2026-11-02, `tools/device_vs_kavita.py`, hash match, read-only)
