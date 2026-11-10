@@ -169,6 +169,7 @@ any notion of a re-read or of finish dates (H8). ToS risk accepted by owner.
 Verify: `python3 spikes/s6_fable.py --roundtrip`
 
 ## Task 12 — S7: ABS app behaviour
+*Done 2026-11-10: PASS, research/spikes/S7.md (tested with the AudioBooth iOS client).*
 `spikes/s7_abs_cadence.py`: subscribe to the ABS socket with the API key and log every event with timestamps; the
 owner follows a short script in the iOS app on a paired title:
 1. Play 5 minutes → interval between `user_item_progress_updated` events (lag floor for immersion, C7).
