@@ -1,0 +1,42 @@
+{
+ "empty_selectedText": {
+  "status": 400,
+  "body": "Failed to create annotation, try again"
+ },
+ "end_before_start": {
+  "status": 200,
+  "body": "{\"id\":9,\"xPath\":\"//body/p[14]\",\"endingXPath\":\"//body/p[12]\",\"selectedText\":\"Her teeth are very sharp.\",\"comment\":\"{\\\"ops\\\": [{\\\"insert\\\": \\\"readsync API test\\\\n\\\"}]}\",\"commentHtml\":null,\"commentPlainT",
+  "stored": {
+   "id": 9,
+   "xPath": "//body/p[14]",
+   "endingXPath": "//body/p[12]",
+   "selectedText": "Her teeth are very sharp.",
+   "highlightCount": 25
+  },
+  "deleted": 200
+ },
+ "missing_paragraph": {
+  "status": 200,
+  "body": "{\"id\":10,\"xPath\":\"//body/p[99]\",\"endingXPath\":\"//body/p[99]\",\"selectedText\":\"no such paragraph\",\"comment\":\"{\\\"ops\\\": [{\\\"insert\\\": \\\"readsync API test\\\\n\\\"}]}\",\"commentHtml\":null,\"commentPlainText\":\"\"",
+  "stored": {
+   "id": 10,
+   "xPath": "//body/p[99]",
+   "endingXPath": "//body/p[99]",
+   "selectedText": "no such paragraph",
+   "highlightCount": 17
+  },
+  "deleted": 200
+ },
+ "range_two_paragraphs": {
+  "status": 200,
+  "body": "{\"id\":11,\"xPath\":\"//body/p[12]\",\"endingXPath\":\"//body/p[13]\",\"selectedText\":\"It steps out onto the cold, sharp ground. It sniffs the air\",\"comment\":\"{\\\"ops\\\": [{\\\"insert\\\": \\\"readsync API test\\\\n\\\"}]}",
+  "stored": {
+   "id": 11,
+   "xPath": "//body/p[12]",
+   "endingXPath": "//body/p[13]",
+   "selectedText": "It steps out onto the cold, sharp ground. It sniffs the air",
+   "highlightCount": 59
+  },
+  "deleted": 200
+ }
+}

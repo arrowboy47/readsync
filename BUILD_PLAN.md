@@ -109,6 +109,7 @@ its section in `research/devices.md`.
 ## Phase 1 — Spikes (read-mostly; each writes `research/spikes/S<n>.md`)
 
 ## Task 06 — S1: Kavita annotation create + render
+*Done 2026-11-10: PASS, research/spikes/S1.md.*
 `spikes/s1_kavita_annotation.py`: read one annotation the owner makes by hand in Kavita on *This Is How You Lose
 the Time War* (template), then create a second one via `POST /api/Annotation/create` on a different paragraph
 using only `xPath`, `endingXPath`, `selectedText`, `pageNumber`, ids. Read it back; delete it with `--cleanup`.
@@ -120,7 +121,7 @@ Done when: the script exits 0 **and** the owner confirms the API-made highlight 
 right words (screenshot in `S1.md`).
 
 ## Task 07 — S2: Kavita SignalR events and reader behaviour
-*API half done 2026-10-30 (`research/spikes/S2.md`): echo confirmed, `AnnotationUpdate` not fired for API writes. Browser half needs the owner.*
+*Done 2026-11-10: PASS, `research/spikes/S2.md`. Echo confirmed; AnnotationUpdate never fires (poll); open reader ignores then overwrites server changes.*
 `spikes/s2_kavita_signalr.py`: connect to the messages hub (path to confirm), then post a progress update for a
 test book and wait for `UserProgressUpdate`; create/delete an annotation and wait for `AnnotationUpdate`. Record
 payload shapes, and whether events fire for our own API writes (echo, R8). Restore the original progress afterwards.
