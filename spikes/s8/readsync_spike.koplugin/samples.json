@@ -1,0 +1,307 @@
+{
+ "book": "tw.epub",
+ "samples": [
+  {
+   "spine_index": 7,
+   "file": "ops/xhtml/ch02.html",
+   "para": 6,
+   "quote": "the sound echoes down the hospital’s empty halls. She is unaccustomed",
+   "prefix": "nch. But she laughs, too, and ",
+   "suffix": " to being thwarted. Something ",
+   "flags": {
+    "smart_quotes": true,
+    "soft_hyphen": true,
+    "italic": false,
+    "dash": false
+   },
+   "id": 0,
+   "shy_word": "hospital"
+  },
+  {
+   "spine_index": 37,
+   "file": "ops/xhtml/ch17.html",
+   "para": 18,
+   "quote": "or canines, and decides: If that’s how this goes, fine. She keeps the",
+   "prefix": "closing around her own molars ",
+   "suffix": " flame inside her safe.",
+   "flags": {
+    "smart_quotes": true,
+    "soft_hyphen": true,
+    "italic": true,
+    "dash": false
+   },
+   "id": 1,
+   "shy_word": "canines"
+  },
+  {
+   "spine_index": 51,
+   "file": "ops/xhtml/ch25a.html",
+   "para": 6,
+   "quote": "When you said you wouldn’t write again, when you said—that is the",
+   "prefix": "",
+   "suffix": " only letter of yours I’ve wan",
+   "flags": {
+    "smart_quotes": true,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": true
+   },
+   "id": 2
+  },
+  {
+   "spine_index": 28,
+   "file": "ops/xhtml/ch12a.html",
+   "para": 7,
+   "quote": "missing some context there, though I can see what place it holds in",
+   "prefix": "nstantinople section—I may be ",
+   "suffix": " the book, and the trickery re",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": true,
+    "dash": false
+   },
+   "id": 3
+  },
+  {
+   "spine_index": 30,
+   "file": "ops/xhtml/ch13a.html",
+   "para": 24,
+   "quote": "of our plantings. Imagine walking through a thorn hedge that grows",
+   "prefix": "ho try to push through to one ",
+   "suffix": " thicker, harder, sharper the ",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": true,
+    "dash": false
+   },
+   "id": 4
+  },
+  {
+   "spine_index": 30,
+   "file": "ops/xhtml/ch13a.html",
+   "para": 23,
+   "quote": "too difficult to manage, the cost/benefit all askew—so you catch us",
+   "prefix": "the stuff. Too unpredictable, ",
+   "suffix": " on the move, in between, whil",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": true
+   },
+   "id": 5
+  },
+  {
+   "spine_index": 43,
+   "file": "ops/xhtml/ch20.html",
+   "para": 14,
+   "quote": "how unsubtle. Red said not to read her next letter—and here it is,",
+   "prefix": "lue is insulted. How obvious; ",
+   "suffix": " announcing itself as poison a",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": true
+   },
+   "id": 6
+  },
+  {
+   "spine_index": 18,
+   "file": "ops/xhtml/ch07a.html",
+   "para": 1,
+   "quote": "for how a civilisation ought to be: How many bright-eyed adolescents",
+   "prefix": ", the original Platonic ideal ",
+   "suffix": " have poured the fervour of th",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 7
+  },
+  {
+   "spine_index": 44,
+   "file": "ops/xhtml/ch20a.html",
+   "para": 7,
+   "quote": "my advice, as your body revolts and poison claims you. It twists in",
+   "prefix": "ade you read so far, ignoring ",
+   "suffix": " my guts. If you have read thi",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 8
+  },
+  {
+   "spine_index": 44,
+   "file": "ops/xhtml/ch20a.html",
+   "para": 15,
+   "quote": "would have liked it, but I want to see it reflected in your eyes. I",
+   "prefix": " to protect—I don’t think you ",
+   "suffix": " wish I could have seen your b",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 9
+  },
+  {
+   "spine_index": 33,
+   "file": "ops/xhtml/ch15.html",
+   "para": 3,
+   "quote": "turns, sifting a thousand-person crowd for a single predator, one",
+   "prefix": "n acrobat, she climbs, flips, ",
+   "suffix": " watcher who should not be the",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 10
+  },
+  {
+   "spine_index": 26,
+   "file": "ops/xhtml/ch11a.html",
+   "para": 11,
+   "quote": "grows armor. If I could touch you, put my finger to your temple and",
+   "prefix": ", soft, and fresh grows hard, ",
+   "suffix": " sink you into me the way Gard",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 11
+  },
+  {
+   "spine_index": 10,
+   "file": "ops/xhtml/ch03a.html",
+   "para": 3,
+   "quote": "music with his fellow, travelled widely, drew tears from an emperor,",
+   "prefix": "e fell in love! Made glorious ",
+   "suffix": " melted her hard heart, bumped",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 12
+  },
+  {
+   "spine_index": 22,
+   "file": "ops/xhtml/ch09a.html",
+   "para": 4,
+   "quote": "us back into the root system in loving libation, and we grow stronger",
+   "prefix": "s, stomps us into wine, pours ",
+   "suffix": " and more potent together.",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 13
+  },
+  {
+   "spine_index": 25,
+   "file": "ops/xhtml/ch11.html",
+   "para": 2,
+   "quote": "thought that, in another strand, much later, will be called",
+   "prefix": "ext day and invents a form of ",
+   "suffix": " hyperbolic geometry. Red’s al",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 14
+  },
+  {
+   "spine_index": 47,
+   "file": "ops/xhtml/ch22.html",
+   "para": 30,
+   "quote": "They stick in the throat. They scatter to a hundred seeds. They bring",
+   "prefix": "",
+   "suffix": " daughters of earth back down ",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 15
+  },
+  {
+   "spine_index": 18,
+   "file": "ops/xhtml/ch07a.html",
+   "para": 6,
+   "quote": "them and their Lady; just how layered and complex plain speech could",
+   "prefix": "bserve correspondence between ",
+   "suffix": " be, how many secrets wrapped ",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 16
+  },
+  {
+   "spine_index": 37,
+   "file": "ops/xhtml/ch17.html",
+   "para": 38,
+   "quote": "dissatisfaction. Little sense details you might not even notice. She",
+   "prefix": "ts to turn you. She’s seeding ",
+   "suffix": " is not trying to kill you: We",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 17
+  },
+  {
+   "spine_index": 20,
+   "file": "ops/xhtml/ch08a.html",
+   "para": 2,
+   "quote": "Commandant wanted explanations, as Commandant tends to, after the",
+   "prefix": "ast letter caught me napping. ",
+   "suffix": " sinking island took so many t",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 18
+  },
+  {
+   "spine_index": 38,
+   "file": "ops/xhtml/ch17a.html",
+   "para": 1,
+   "quote": "I dance to you in a body built for sweetness, a body that tears",
+   "prefix": "",
+   "suffix": " itself apart in defense of wh",
+   "flags": {
+    "smart_quotes": false,
+    "soft_hyphen": false,
+    "italic": false,
+    "dash": false
+   },
+   "id": 19
+  }
+ ]
+}

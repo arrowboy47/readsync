@@ -185,6 +185,7 @@ Verify: `python3 spikes/s7_abs_cadence.py --minutes 5 --report research/spikes/S
 Done when: `S7.md` answers steps 2–6.
 
 ## Task 13 — S8: On-device anchor resolution
+*Done 2026-11-10: PASS on the Kindle, 20/20, `research/spikes/S8.md`. Emulator skipped (not packaged); ran on the device directly.*
 Prove the KOReader side of E10: given `quote`, `prefix`, `suffix` and `spine_index`, find the passage with crengine and
 produce `pos0`/`pos1` xpointers. Build a minimal test plugin and run it in the KOReader desktop emulator on Jadu first,
 then on the PW3: 20 passages picked at random from *Time War* (including ones with smart quotes, soft hyphens and
