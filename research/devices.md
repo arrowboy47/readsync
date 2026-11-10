@@ -32,12 +32,12 @@ Feeds EDGE_CASES A8, F1, I5 and owner questions Q6/Q7.
 - **Duplicate risk:** the Kindle and the Kobo carry different copies of some titles (e.g. *Remain*, *Building Applications with AI Agents*). Same title, different file = different hash = separate progress. Kavita's copy should be the one pushed to devices (OPDS), not sideloaded copies.
 
 ## iPhone
-- Audiobook app: **Audiobookshelf** (iOS app). Version, server URL it uses, and downloads: still to confirm on the phone.
+- Audiobook app: **AudioBooth** v1.13 (confirmed by the owner 2026-11-10; the official Audiobookshelf app has never been used). It connects to the Audiobookshelf server through the public address `https://audiobookshelf.adduo.fyi`, so it syncs away from home. Downloads work offline (tested in S7).
 - **Ebook reading on the iPhone (decided 2026-11-10): the Kavita web reader in Safari, added to the Home Screen (PWA), is the supported path.** It saves position, highlights and notes straight to Kavita (verified in S1/S2). It needs a connection.
 - **Readest** is installed and its OPDS catalog works (the Kavita feed was browsed from it on 2026-11-10; the Kavita log shows the client name "Readest/1.0 (OPDS Browser)"), but it has **not sent any progress** to Kavita: the log has no request to the sync endpoint. Its Integrations screen shows OPDS as a source only, and no KOReader Sync destination was found. Treat Readest as download-only until a KOReader Sync setting is found and verified.
 - The Kavita OPDS wiki page lists no iOS EPUB client with progress sync (Chunky and Panels are comics only, Yomu has no sync). KOReader is the only EPUB client with sync there, so on the phone the web reader is the one that works.
 - The audiobook app on the phone is AudioBooth (see research/spikes/S7.md).
-- Fable app: to confirm.
+- Fable app: used on the iPhone, logged in as the same Fable account as the hub tests (confirmed by the owner 2026-11-10).
 
 ## Books on the devices vs Kavita (2026-11-02, `tools/device_vs_kavita.py`, hash match, read-only)
 - **Kobo:** 7 of 13 files are byte-identical to a Kavita copy. Not in Kavita (or a different file): *11/22/63*, *Psychology and Work*, 4 PDFs (Hogg/McKean/Craig, Raschka, *Deep Learning with Python*, Murach's JS).
